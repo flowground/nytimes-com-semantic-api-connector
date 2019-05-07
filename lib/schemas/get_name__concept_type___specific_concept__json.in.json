@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "properties": {
+        "fields": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "all",
+                "pages",
+                "ticker_symbol",
+                "links",
+                "taxonomy",
+                "combinations",
+                "geocodes",
+                "article_list",
+                "scope_notes",
+                "search_api_query"
+            ]
+        },
+        "query": {
+            "required": true,
+            "type": "string"
+        },
+        "concept_type": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "nytd_geo",
+                "nytd_per",
+                "nytd_org",
+                "nytd_des"
+            ]
+        },
+        "specific_concept": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
